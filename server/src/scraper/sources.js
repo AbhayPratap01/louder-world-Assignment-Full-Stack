@@ -1,0 +1,38 @@
+export const sources = [
+  {
+    name: "Time Out Sydney",
+    city: "Sydney",
+    url: "https://www.timeout.com/sydney/events",
+    listSelector: ".tile",
+    titleSelector: ".tile__title",
+    linkSelector: "a",
+    imageSelector: "img",
+    dateSelector: ".tile__tag",
+    detail: {
+      descriptionSelector: "[data-component=\"content-body\"] p",
+      venueSelector: ".venue-details__title, .listing-venue__title",
+      addressSelector: ".venue-details__address, .listing-venue__address",
+      categorySelector: ".category-tags__item",
+      dateSelector: ".listing-details__item--date time",
+      imageSelector: ".listing-hero__image img",
+    },
+  },
+  {
+    name: "City of Sydney",
+    city: "Sydney",
+    url: "https://whatson.cityofsydney.nsw.gov.au/events",
+    listSelector: ".event-listing-card",
+    titleSelector: ".event-listing-card__title",
+    linkSelector: "a",
+    imageSelector: "img",
+    dateSelector: ".event-listing-card__date",
+    detail: {
+      descriptionSelector: ".event-detail__content p, .event-detail__content li",
+      venueSelector: ".event-detail__venue-name",
+      addressSelector: ".event-detail__venue-address",
+      categorySelector: ".event-detail__category a",
+      dateSelector: "time",
+      imageSelector: ".event-detail__hero img",
+    },
+  },
+];
